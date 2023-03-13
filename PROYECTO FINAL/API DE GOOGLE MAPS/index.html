@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Google Maps</title>
+	  <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <button class="btntype="button" onclick="updateMap()">
+      Tocame.. :)
+  </button>
+
+  
+    
+    <div id="map" style="width:800px; height:600px; margin: 0 auto;"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwEb8HtRzsiiZ2ixXH0mV5zf2Np0VIoKY&callback=myMap"></script>
+    <script src="main.js"></script>
+  </body>
+  <fieldset>
+
+  <head>
+    <title>Distance Calculator in Kilometers</title>
+  </head>
+  <body>
+    <h1>Distance Calculator in Kilometers</h1>
+
+    <label for="latitude1">Point 1 latitude:</label>
+    <input type="number" id="latitude1" step="0.0001" /><br />
+
+    <label for="longitud1">Point 1 longitude:</label>
+    <input type="number" id="longitud1" step="0.0001" /><br />
+
+    <label for="latitude2">Point 2 latitude:</label>
+    <input type="number" id="latitude2" step="0.0001" /><br />
+
+    <label for="longitud2">Point 2 longitude:</label>
+    <input type="number" id="longitud2" step="0.0001" /><br />
+    <hr>
+
+    <button onclick="calculateDistance()">Calculate distance in kilometers</button>
+
+    <p id="result"></p>
+  </fieldset>
+
+</html>
